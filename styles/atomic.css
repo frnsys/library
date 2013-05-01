@@ -483,6 +483,9 @@ a, a:visited {
     display: inline-block;
     vertical-align: top;
     padding: 0 4em 4em 4em; }
+  .library h6 {
+    max-width: 10em;
+    word-wrap: break-word; }
 
 .oingo-boingo {
   width: 160px !important;

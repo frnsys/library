@@ -83,6 +83,11 @@ a, a:visited {
 		vertical-align:top;
 		padding:0 4em 4em 4em;
 	}
+
+	h6 {
+		max-width:10em;
+		word-wrap:break-word;
+	}
 }
 
 .oingo-boingo {
