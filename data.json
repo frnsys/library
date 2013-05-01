@@ -5,7 +5,7 @@
 			"books": ["arduino_foo.pdf", "arduino_bar.pdf"]
 		},
 		"RaspberryPi": {
-			"books": ["rasp_foo.pdf", "rasp_bar.pdf"]
+			"books": ["rasp_foo.pdf", "rasp_bar.pdf", "bakingpies.epub", "yum.pdf", "butterpie.pdf"]
 		}
 	},
 	"Software" : {
