@@ -1,0 +1,14 @@
+{
+	"Hardware": {
+		"books": ["foo.pdf", "bar.epub"],
+		"Arduino": {
+			"books": ["arduino_foo.pdf", "arduino_bar.pdf"]
+		},
+		"RaspberryPi": {
+			"books": ["rasp_foo.pdf", "rasp_bar.pdf"]
+		}
+	},
+	"Software" : {
+	},
+	"books": ["The_Hobbit.pdf", "Super_BAM.pdf"]
+}

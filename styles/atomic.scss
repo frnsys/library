@@ -1,0 +1,87 @@
+/*
+		Atomic 0.0.1
+
+		Copyright 2013 Francis Tseng
+		Released under the MIT License
+*/
+
+// ========================================== CONFIG
+$primary-color:#560F6D;
+$error-color:#DD4343;
+$warning-color:#E2E942;
+$success-color:#47C0B2;
+$primary-type: Verdana, Geneva, sans-serif;
+$baseline-font-size: 14px;
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+// ========================================== CORE
+@import "core/normalize";
+@import "core/mixins";
+@import "core/type";
+@import "core/lists";
+
+// ========================================== MODULES
+// Enable or disable here.
+@import "modules/icons";
+
+// ========================================== IMAGES
+img {
+	max-width:100%;
+	vertical-align:middle;
+}
+
+
+// ========================================== STYLES
+
+html, body {
+	background:#FFF6EA;
+	font-family: "azo-sans-web",sans-serif;
+	color:#111;
+}
+
+a, a:visited {
+	color:#111;
+	text-decoration:none;
+}
+
+.circle {
+	@include vendor(border-radius,100em);
+	display:inline-block;
+	padding:2em;
+}
+
+.logo {
+	text-align:center;
+	position:relative;
+	margin:4em auto 4em auto;
+	width:140px;
+	height:140px;
+	img {
+		width:140px;
+		height:140px;
+		position:absolute;
+		left:0;
+	}
+}
+
+.library {
+	text-align:center;
+	max-width:800px;
+	margin:0 auto;
+	img {
+		width:60px;
+		height:60px;
+	}
+
+	li {
+		display:inline-block;
+		vertical-align:top;
+		padding:4em;
+	}
+}
+
+.oingo-boingo {
+	width:160px !important;
+	height:160px !important;
+}
