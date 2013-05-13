@@ -7,7 +7,7 @@ define("scripts/app", [
 
 			 'handlebars',
 			 'text!templates/item.html',
-			 'text!data.html',
+			 'text!data.js',
 			 'text!templates/empty.html'
 ],
 function( $, ø, magic, hbs, tpl, data, empty_tpl ) {
