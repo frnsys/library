@@ -100,10 +100,11 @@ function( $, ø, magic, hbs, tpl, data, empty_tpl ) {
 							var books = data[key];
 							for (var i = 0; i < books.length; i++) {
 								var file = books[i]
-									, item = s.template({ title: file, url: url.substring(1) + file });
+									, item = s.template({ title: file, url: "tomes/" + url.substring(1) + file });
 								$(".library").append( item );
 							}
 						} else {
+							console.log(url);
 							var item = s.template({ title: key, url: url + key, collection: true });
 							$(".library").append( item );
 						}
