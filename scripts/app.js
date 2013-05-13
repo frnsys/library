@@ -1,3 +1,5 @@
+// Should eventually port this to Backbone via Bane
+
 define("scripts/app", [
 			 'jquery',
 			 'scripts/utils',
@@ -7,7 +9,6 @@ define("scripts/app", [
 			 'text!templates/item.hbs',
 			 'text!data.json',
 			 'text!templates/empty.hbs'
-
 ],
 function( $, ø, magic, hbs, tpl, data, empty_tpl ) {
 	return {
@@ -48,6 +49,7 @@ function( $, ø, magic, hbs, tpl, data, empty_tpl ) {
 			});
 		},
 
+		// Find a target set of books in data
 		traverse: function( targets, data ) {
 			var target = targets.shift();
 			if (targets.length > 0) {
@@ -60,6 +62,7 @@ function( $, ø, magic, hbs, tpl, data, empty_tpl ) {
 			return data[target];
 		},
 
+		// Load set of books based on hash
 		load: function( data ) {
 			var s = this;
 			if ( window.location.hash ) {
@@ -71,6 +74,7 @@ function( $, ø, magic, hbs, tpl, data, empty_tpl ) {
 			}
 		},
 
+		// Show the books
 		render: function( data ) {
 			var s = this;
 			$(".library").animate({
