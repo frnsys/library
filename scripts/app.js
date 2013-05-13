@@ -6,9 +6,9 @@ define("scripts/app", [
 			 'scripts/magic',
 
 			 'handlebars',
-			 'text!templates/item.hbs',
-			 'text!data.json',
-			 'text!templates/empty.hbs'
+			 'text!templates/item.html',
+			 'text!data.html',
+			 'text!templates/empty.html'
 ],
 function( $, ø, magic, hbs, tpl, data, empty_tpl ) {
 	return {
